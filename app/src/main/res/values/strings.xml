@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">StoryScape</string>
+
+    <string name="signin">Masuk</string>
+    <string name="signup">Daftar</string>
+
+    <string name="email">Email</string>
+    <string name="password">Kata Sandi</string>
+    <string name="name">Nama</string>
+
+    <string name="daftarText">Belum Punya Akun?</string>
+    <string name="haveText">Sudah Punya Akun?</string>
+
+    <string name="name_notif">Masukkan Nama Anda</string>
+    <string name="email_notif">Masukkan Email Anda</string>
+    <string name="password_notif">Masukkan Password Anda</string>
+
+    <string name="errorLogin">Terjadi Kesalahan Saat Masuk</string>
+    <string name="errorRegister">Terdapat Kesalahan Saat Daftar</string>
+
+    <string name="errorEmail">Masukkan Email Yang Benar</string>
+    <string name="errorPass">Password Harus Memiliki Minimal 8 Karakter</string>
+    <string name="errorPost">Terjadi Kesalahan Saat Mengunggah</string>
+    <string name="successPost">Berhasil Mengunggah Cerita</string>
+    <string name="processPost">Sedang Proses Mengunggah</string>
+    <string name="processLogin">Sedang Proses Masuk</string>
+    <string name="processRegister">Sedang Proses Masuk</string>
+    <string name="processMap">Sedang Memproses Peta</string>
+    <string name="story_scape">Story Scape Story</string>
+    <string name="detail_scape">Tittle Story</string>
+
+    <string name="photo_detail">photo detail</string>
+    <string name="dateFormat">dd-mm-yyyy</string>
+    <string name="username">Username</string>
+
+    <string name="detailImgDesc">gambar unggahan</string>
+    <string name="spaceDesc">pembatas</string>
+    <string name="CreatorTv">Pembuat</string>
+    <string name="DescTv">Deskripsi</string>
+    <string name="descAlert">peringatan</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="no_access">Anda tidak memiliki akses</string>
+</resources>
+
+

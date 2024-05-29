@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/loadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></FrameLayout>
+
+    <ImageView
+        android:id="@+id/storyPictPreview"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="placeholder"
+        android:src="@drawable/ic_placeholder_upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cam_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
+        android:text="Camera"
+        app:layout_constraintBottom_toTopOf="@+id/descEtLayout"
+        app:layout_constraintStart_toStartOf="@+id/storyPictPreview"
+        app:layout_constraintTop_toBottomOf="@+id/storyPictPreview"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/gallery_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="86dp"
+        android:text="Gallery"
+        app:layout_constraintEnd_toEndOf="@+id/storyPictPreview"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cam_btn"
+        app:layout_constraintTop_toBottomOf="@+id/storyPictPreview" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/descEtLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gallery_btn">
+
+        <EditText
+            android:id="@+id/descEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Tambahkan Deskripsi"
+            android:inputType="textMultiLine"
+            android:lines="12"
+            android:maxLines="16"
+            android:minLines="4"
+            android:scrollbars="vertical" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/postBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Unggah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descEtLayout" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/backHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#EA964C"
+        android:contentDescription="Kembali"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postBtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
